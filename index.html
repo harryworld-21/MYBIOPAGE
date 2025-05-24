@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MALIK HASSAN - PORTFOLIO</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      overflow: hidden;
+    }
+
+    video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: -2;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: -1;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 60px 20px;
+      height: 100%;
+      overflow-y: auto;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 40px 30px;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      text-align: center;
+      max-width: 800px;
+      width: 100%;
+      animation: fadeIn 1.5s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .profile-pic {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #fff;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.1em;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .info-box {
+      text-align: left;
+      margin-top: 25px;
+    }
+
+    .info-box h2 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #fff;
+      padding-bottom: 5px;
+    }
+
+    .info-box ul {
+      list-style: none;
+      padding: 0;
+      line-height: 1.8;
+    }
+
+    .info-box ul li::before {
+      content: "› ";
+      color: #00c6ff;
+    }
+
+    .telegram-btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 25px;
+      background: linear-gradient(135deg, #00c6ff, #0072ff);
+      border: none;
+      border-radius: 50px;
+      color: white;
+      font-size: 1.1em;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 10px #00c6ff;
+    }
+
+    .telegram-btn:hover {
+      background: linear-gradient(135deg, #0072ff, #00c6ff);
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #00c6ff;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background Video -->
+  <video autoplay muted loop>
+    <source src="bg.mp4" type="video/mp4" />
+    Your browser does not support HTML5 video.
+  </video>
+  <div class="overlay"></div>
+  <!-- Content -->
+  <div class="container">
+    <div class="card">
+      <h2>"كُلُّ نَفْسٍ ذَآئِقَةُ الْمَوْتِ"</h2>
+      <img src="https://i.pinimg.com/736x/3b/4d/19/3b4d192e8dfdb101c6ad3b1bc017e0fd.jpg" alt="MALIK HASSAN " class="profile-pic" />
+      <h2>亗 ŴĦƗŦ€ ĦΔĆҜ€Ř 亗</h2>
+      <br>
+      <h5><p>Hi! I'm ❈ 𝕄𝔸𝕃𝕀𝕂 ℍ𝔸𝕊𝕊𝔸ℕ ❈ — A Tech lover,Hacker,Desginer.</p></h5>
+
+      <div class="info-box">
+        <h3>About Me:</h3>
+        <ul>
+         <li><strong>Country:</strong> Pakistan </li>
+          <li><strong>College:</strong> Student </li>
+          <li><strong>Hobbies:</strong> Hacking,Coding,Designing</li>
+        </ul>
+      </div>
+
+      <div class="info-box">
+        <h3>Skills</h3>
+        <ul>
+           <li>Mobile hacking metasploit expert,Web hacking,OTP bypass,and many more </li>
+          <li>HTML expert</li>
+          <li>Trader  </li>
+          <li>Web,App UI/UX Design</li>
+          <li>RDP/VPS seller</li>
+          <li>Privte bin seller</li>
+           <li>All premium courses,premium apps,hacking trick and many more avalable</li>
+        </ul>
+        <br>
+      </div>
+
+      <h5><p>100% TRUSTED DEALLER.NO,SCAM GURANTEY</p></h5>
+    </div>
+
+    <footer>© 2025 MALIK HASSAN. All rights reserved.</footer>
+  </div>
+
+</body>
+</html>
